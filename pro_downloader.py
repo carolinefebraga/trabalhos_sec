@@ -1,7 +1,7 @@
 import requests
 
 def baixar_arquivo(url,endereco):
-	resposta = request.get(url)
+	resposta = requests.get(url)
 	with open (endereco, 'wb') as novo_arquivo:
 		novo_arquivo.write(resposta.content)
 
